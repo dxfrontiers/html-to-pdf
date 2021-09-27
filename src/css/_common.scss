@@ -1,0 +1,24 @@
+@media print {
+  body {
+    // this is required due to puppeteer defaulting to some strange color handling.
+    // for details see the method documentation for Page.pdf()
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+@page {
+  size: $page-size;
+  margin: $page-margin-top $page-margin-right $page-margin-bottom $page-margin-left;
+}
+
+@media screen {
+  article {
+    width: $page-width - $page-margin-left - $page-margin-right;
+    margin: auto;
+    border: solid 1pt black;
+    padding-top: $page-margin-top;
+    padding-bottom: $page-margin-bottom;
+    padding-left: $page-margin-left;
+    padding-right: $page-margin-right;
+  }
+}

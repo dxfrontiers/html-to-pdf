@@ -1,0 +1,20 @@
+
+
+article.debug {
+  section {
+    border: 1pt solid blue;
+  }
+  main {
+    border: 1pt solid yellow;
+  }
+
+  table {
+    border: 1px solid lightgray;
+    tr {
+      border: 1px solid lightblue;
+    }
+    td {
+      border: 1px solid blue;
+    }
+  }
+}

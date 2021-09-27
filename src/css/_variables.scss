@@ -1,0 +1,19 @@
+$primary_color: #503267;
+$highlight_color: #8cc63f;
+
+// page
+$page-size: A4; // used for printing
+$page-width: 210mm; // used for visualization on screen
+$page-margin-top: 0.75cm;
+$page-margin-bottom: 1.27cm;
+$page-margin-left: 1.25cm;
+$page-margin-right: 1.35cm;
+
+// typography
+$font-size: 13pt;
+$font-size-h1: ceil($font-size * 1.8);
+$font-size-h2: ceil($font-size * 1.6);
+$font-size-h3: ceil($font-size * 1.3);
+$font-size-h4: ceil($font-size * 1.2);
+$font-size-h5: ceil($font-size * 1.1);
+$font-size-h6: ceil($font-size * 1.1);

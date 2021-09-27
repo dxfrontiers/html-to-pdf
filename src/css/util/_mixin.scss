@@ -1,0 +1,22 @@
+@mixin pageBreakAfter {
+  page-break-after: always;
+  @media screen {
+    // this is a visual indicator, that visualizes where a page break will occur
+    & {
+      padding-bottom: 2cm;
+    }
+    &::after {
+      content: "page break";
+      display: block;
+      text-align: center;
+      background-color: #f8f8f8;
+      color: gray;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-top: 0.2cm;
+      margin-bottom: 0.2cm;
+      padding-top: 0.2cm;
+      padding-bottom: 0.2cm;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import "variables";
+@import "common";
+@import "util/debug";
+@import "util/mixin";
+@import "layout/typography";
+
+
+section {
+  @include pageBreakAfter();
+  
+  .content {
+    column-count: 2;
+  }
+  
+  p:first-child {
+    font-style: italic;
+  }
+
+  table {
+    width: 100%;
+    border-spacing: 0.2cm;
+    th {
+      background-color:  #f0f7e7;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+  
+  .box {
+    background-color: #f0f7e7;
+    padding: 0.5cm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
+      padding-bottom: 0.3em;
+      border-bottom: 1px solid gray;
+
+      &:last-child {
+        border: 0;
+      }
+    }
+  }
+
+
+}
+
